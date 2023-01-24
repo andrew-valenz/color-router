@@ -1,0 +1,17 @@
+nav {
+  background: purple;
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.links {
+  text-decoration: none;
+  color: antiquewhite;
+}
