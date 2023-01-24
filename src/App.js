@@ -1,15 +1,19 @@
 import React from 'react';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import RGB from './components/RGB.js';
+import Nav from './components/Nav.js';
+import NotFound from './components/NotFound.js';
 
 function App() {
   return (
-    <Switch>
-      <Route path="/:red/:green/:blue/">
-        <RGB />
-      </Route>
-    </Switch>
+    <>
+      <Nav />
+      <Switch>
+        <Route path="/:red/:green/:blue/" component={RGB} />
+        <Route exact path="/" component={NotFound} />
+      </Switch>
+    </>
   );
 }
 
