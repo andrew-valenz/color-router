@@ -1,24 +1,6 @@
-import 'Nav.css';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-export async function Green() {
-  return (
-    <>
-      <h2>Green</h2>
-    </>
-  );
-}
-
-export async function Blue() {
-  return (
-    <>
-      <h2>Blue</h2>
-    </>
-  );
-}
-export async function Red() {
-  return (
-    <>
-      <h2>Red</h2>
-    </>
-  );
+export default function nav() {
+  return <div>nav</div>;
 }

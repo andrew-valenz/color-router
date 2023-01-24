@@ -1,9 +1,16 @@
 import React from 'react';
+import { Route, Switch, Link } from 'react-router-dom';
 import './App.css';
+import RGB from './components/RGB.js';
 
 function App() {
-  const [color, changeColor] = useState('282c34');
-  return <div></div>;
+  return (
+    <Switch>
+      <Route path="/:red/:green/:blue/">
+        <RGB />
+      </Route>
+    </Switch>
+  );
 }
 
 export default App;
